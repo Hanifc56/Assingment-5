@@ -21,41 +21,59 @@
         </section>
     </header>
     <main>
-        <section class="continer d-flex">
-            <section class="container m-3 col-lg-6">
-                <img class="img-fluid" src="images/piggy.png" alt="small pigy bank reffers to saveing">
-            </section>
-            <section class="container m-3 col-lg-6">
-                <h3 class="text-center">Income</h3>
-                <div class="d-flex justify-content-center ">
-                    <div class="my-2 mx-auto">
-                        <P class="d-inline text-center">Income: </P>
-                        <input class=" justify-content-center" type="text" name="income-field" id="">
-
-                    </div>
+        <section class="container">
+            <div class="row  d-flex">
+                <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-5">
+                    <img class="img-fluid" src="images/piggy.png" alt="small pigy bank reffers to saveing">
                 </div>
-                <h3 class="text-center">Expenses</h3>
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="my-2 mx-auto">
-                        <P class="d-inline text-center">Income: </P>
-                        <input class=" justify-content-center" type="text" name="income-field" id="">
+                <div class="col col-sm-0 col-lg my-6  border-0 rounded-3 bg-light pt-3">
+                    <h4 class="text-center mx-auto my-2">Income</h4>
+                    <div class="d-flex justify-content-center ">
+                        <div class="my-2 mx-auto">
+                            <P class="d-inline text-center">Income: </P>
+                            <input class=" justify-content-center" type="text" name="income-field" id="">
 
+                        </div>
                     </div>
-                    <div class="my-2 mx-auto">
-                        <P class="d-inline text-center">Income: </P>
-                        <input class=" justify-content-center" type="text" name="income-field" id="">
+                    <h4 class="text-center mx-auto my-2">Expenses</h4>
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="my-2 mx-auto">
+                            <P class="d-inline text-center pe-3">Food: </P>
+                            <input class=" justify-content-center" type="text" name="income-field" id="">
 
-                    </div>
-                    <div class="my-2 mx-auto">
-                        <P class="d-inline text-center">Income: </P>
-                        <input class=" justify-content-center" type="text" name="income-field" id="">
+                        </div>
+                        <div class="my-2 mx-auto">
+                            <P class="d-inline text-center pe-3">Rent: </P>
+                            <input class=" justify-content-center" type="text" name="income-field" id="">
 
+                        </div>
+                        <div class="my-2 mx-auto">
+                            <P class="d-inline text-center ">Clothes: </P>
+                            <input class=" justify-content-center" type="text" name="income-field" id="">
+
+                        </div>
+                        <div class="my-2 mx-auto">
+                            <button class="btn btn-primary w-auto px-3 Calculate-btn" type="submit">Calculate</button>
+                        </div>
                     </div>
+                    <h4 class="text-center mx-auto my-3">Total Expenses: 5500 </h4>
+                    <h4 class="text-center mx-auto my-3">Balance: 4500</h4>
+                    <div class="d-flex justify-content-center mx-auto my-3">
+                        <div class="my-2 mx-auto">
+                            <P class="d-inline text-center pe-2">save: </P>
+                            <input class=" justify-content-center
+                            w-25" type="text" name="income-field" id="">
+                            <p class="d-inline text-center pe-2">% </p>
+                            <button class="btn btn-primary w-auto px-4 Calculate-btn" type="submit">Save</button>
+
+                        </div>
+                    </div>
+                    <h4 class="text-center">Saving Amount: 2000 </h4>
+                    <h4 class="text-center">Remaining Balance: 2500 </h4>
+
 
                 </div>
-
-
-            </section>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
