@@ -1,3 +1,4 @@
+// total expenses
 function totalAmount(foodcost, rentcost, clothcost, totalMoney) {
     if (foodcost < 0 || rentcost < 0 || clothcost < 0) {
         return alert('Enter a positive number');
@@ -11,7 +12,7 @@ function totalAmount(foodcost, rentcost, clothcost, totalMoney) {
 
 
 };
-
+// total & rest money
 function restMoney(totalMoney, totalCost) {
     if (totalMoney < 0 || totalCost < 0) {
         return alert('Enter a positive number');
@@ -21,7 +22,7 @@ function restMoney(totalMoney, totalCost) {
     }
 
 };
-
+// upsate price
 function updatePrice(totalCost, restBalance) {
     // const costInput = document.getElementById('total-expence');
     // costInput.innerText = totalAmount(totalCost);
@@ -33,8 +34,14 @@ function updatePrice(totalCost, restBalance) {
     restMoney.innerText = restBalance;
 
 };
+// saveings error
+function saveingCalculation(balancereamaing, totalsaveing) {
+    if (totalsaveing > balancereamaing) {
+        return alert('your balance is not sufficiant!')
+    }
+};
 
-
+// calculation part
 document.getElementById('calculate-btn').addEventListener('click', function () {
     // total income
     const totalIncome = document.getElementById('total-cost');
@@ -65,12 +72,8 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
 
-})
-function saveingCalculation(balancereamaing, totalsaveing) {
-    if (totalsaveing > balancereamaing) {
-        return alert('your balance is not sufficiant!')
-    }
-}
+});
+
 document.getElementById('saveings').addEventListener('click', function () {
     const saveings = document.getElementById('total-saveings');
     const saveingAmount = parseInt(saveings.value);
@@ -92,4 +95,4 @@ document.getElementById('saveings').addEventListener('click', function () {
     remainingBalance.innerText = balaceAfterSave;
     saveingCalculation(balanceRemainig, totalSaveing);
 
-})
+});
