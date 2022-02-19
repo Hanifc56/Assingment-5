@@ -31,7 +31,8 @@
                     <div class="d-flex justify-content-center ">
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center">Income: </P>
-                            <input class=" justify-content-center" type="text" name="income-field" id="total-income">
+                            <input class=" justify-content-center" type="number" name="income-field" id="total-cost"
+                                placeholder="Enter Your Amount">
 
                         </div>
                     </div>
@@ -39,17 +40,20 @@
                     <div class="d-flex flex-column justify-content-center">
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center pe-3">Food: </P>
-                            <input class=" justify-content-center" type="text" name="income-field" id="food-cost">
+                            <input class=" justify-content-center" type="number" name="income-field" id="food-cost"
+                                placeholder="Enter Your Amount">
 
                         </div>
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center pe-3">Rent: </P>
-                            <input class=" justify-content-center" type="text" name="income-field" id="rent-cost">
+                            <input class=" justify-content-center" type="number" name="income-field" id="rent-cost"
+                                placeholder="Enter Your Amount">
 
                         </div>
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center ">Clothes: </P>
-                            <input class=" justify-content-center" type="text" name="income-field" id="cloth-cost">
+                            <input class=" justify-content-center" type="number" name="income-field" id="cloth-cost"
+                                placeholder="Enter Your Amount">
 
                         </div>
                         <div class="my-2 mx-auto">
@@ -57,13 +61,13 @@
                                 type="submit">Calculate</button>
                         </div>
                     </div>
-                    <h4 class="text-center mx-auto my-3">Total Expenses: 5500 </h4>
-                    <h4 class="text-center mx-auto my-3">Balance: 4500</h4>
+                    <h4 class="text-center mx-auto my-3">Total Expenses: <span id="total-expence">5500</span> </h4>
+                    <h4 class="text-center mx-auto my-3">Balance: <span id="rest-balance">4500</span></h4>
                     <div class="d-flex justify-content-center mx-auto my-3">
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center pe-2">save: </P>
                             <input class=" justify-content-center
-                            w-25" type="text" name="income-field" id="">
+                            w-25" type="number" name="income-field" id="" placeholder="Enter Your Amount">
                             <p class="d-inline text-center pe-2">% </p>
                             <button class="btn btn-primary w-auto px-4 Calculate-btn" type="submit">Save</button>
 
