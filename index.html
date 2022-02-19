@@ -22,12 +22,12 @@
     </header>
     <main>
         <section class="container">
-            <div class="row  d-flex">
+            <div class="row  d-flex ">
                 <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-5">
                     <img class="img-fluid" src="images/piggy.png" alt="small pigy bank reffers to saveing">
                 </div>
-                <div class="col col-sm-0 col-lg my-6  border-0 rounded-3 bg-light pt-3">
-                    <h4 class="text-center mx-auto my-2">Income</h4>
+                <div class="col col-sm-0 col-lg my-6  border-0 rounded-3 bg-light pt-3 ">
+                    <h4 class="text-center mx-auto mt-5 mb-3">Income</h4>
                     <div class="d-flex justify-content-center ">
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center">Income: </P>
@@ -67,14 +67,16 @@
                         <div class="my-2 mx-auto">
                             <P class="d-inline text-center pe-2">save: </P>
                             <input class=" justify-content-center
-                            w-25" type="number" name="income-field" id="" placeholder="Enter Your Amount">
+                            w-25" type="number" name="income-field" id="total-saveings"
+                                placeholder="Enter Your Amount">
                             <p class="d-inline text-center pe-2">% </p>
-                            <button class="btn btn-primary w-auto px-4 Calculate-btn" type="submit">Save</button>
+                            <button id="saveings" class="btn btn-primary w-auto px-4 Calculate-btn"
+                                type="submit">Save</button>
 
                         </div>
                     </div>
-                    <h4 class="text-center">Saving Amount: 2000 </h4>
-                    <h4 class="text-center">Remaining Balance: 2500 </h4>
+                    <h4 class="text-center">Saving Amount:<span id="saveing-amount">2000</span></h4>
+                    <h4 class="text-center">Remaining Balance: <span id="remaining-amount">2500 </span></h4>
 
 
                 </div>
